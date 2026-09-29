@@ -1,0 +1,4 @@
+# Additional dependency for the neural inference workflow.
+# Install a CUDA-compatible PyTorch build for the host as documented in README.md.
+-r requirements.txt
+torch

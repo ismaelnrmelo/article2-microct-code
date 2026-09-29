@@ -1,5 +1,5 @@
 {
-  "release_version": "1.0.0",
+  "release_version": "1.0.1",
   "checkpoint": "assets/accepted_weights.pt",
   "sqrt_spectrum": "assets/accepted_sqrt_spectrum.npy",
   "inference": {
