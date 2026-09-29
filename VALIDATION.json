@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "scientific_module_bytes_match_reviewed_final_sources": {
+    "model.py": true,
+    "inference.py": true,
+    "noise.py": true
+  },
+  "spectrum_asset": {
+    "shape": [
+      160,
+      160,
+      160
+    ],
+    "dtype": "float64",
+    "all_finite": true,
+    "nonnegative": true,
+    "positive_energy": true,
+    "sha256": "32b4719900d2c08498bb47ea0eb037a975a509cef349382793dc21561b45240b"
+  },
+  "cpu_smoke_tests_passed": 5,
+  "cpu_smoke_scope": [
+    "quadratic detrending",
+    "input normalization",
+    "label precedence",
+    "deterministic residual and mixed noise",
+    "CUDA and bfloat16 preflight guards"
+  ],
+  "cli_help_checks": [
+    {
+      "arguments": [
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "arguments": [
+        "infer",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "arguments": [
+        "estimate-noise",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "missing_torch_or_cuda_guard_exit_code": 2,
+  "guard_created_output": false,
+  "scientific_python_versions": {
+    "python": "3.10.11",
+    "numpy": "2.2.6"
+  },
+  "prior_review": {
+    "checkpoint_keys_and_shapes_checked": 175,
+    "trainable_parameter_elements": 4737729,
+    "frequency_buffer_elements": 32,
+    "bounded_numerical_comparisons_with_stub_predictor": 10,
+    "source_model_executable_AST_agreement": true
+  },
+  "not_executed_for_release": [
+    "CUDA neural inference",
+    "training",
+    "complete-volume reproduction",
+    "regeneration of stored residual spectrum from original support"
+  ],
+  "training_adapter_included": false,
+  "raw_data_included": false,
+  "neural_CPU_QA": {
+    "passed": true,
+    "torch": "2.14.0+cpu",
+    "precision": "float32",
+    "strict_checkpoint_load": true,
+    "state_tensors": 175,
+    "trainable_parameters": 4737729,
+    "original_and_supplied_model_forward_bitwise_equal": true,
+    "adapted_tiling_bitwise_equal_for_shapes": [
+      [
+        96,
+        96
+      ],
+      [
+        97,
+        151
+      ],
+      [
+        144,
+        201
+      ]
+    ],
+    "maximum_absolute_difference": 0.0,
+    "adaptation": "A separate CPU validation adapter disabled the CUDA guard and autocast. Distributed scientific modules were unchanged.",
+    "scope_limit": "CPU float32 checks do not validate CUDA/bfloat16 inference. The public inference command still requires CUDA."
+  }
+}

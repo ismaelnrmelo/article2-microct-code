@@ -1,0 +1,6 @@
+# Versions used for the bounded CPU preprocessing checks.
+numpy==2.2.6
+scipy==1.15.3
+tifffile==2025.5.10
+# Select a CUDA-compatible PyTorch build separately for neural inference.
+torch

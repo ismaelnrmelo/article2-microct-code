@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "scope": "Final scientific modules, accepted checkpoint and residual spectrum, configuration, entry points and bounded validation",
+  "self_exclusion": "This manifest excludes its own file.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 43,
+      "sha256": "7f57fdf8c4d2bf105a2e782b877f5c1bfaa105c2b0936deb3a3ba408fdc4cd62"
+    },
+    {
+      "path": "assets/accepted_sqrt_spectrum.npy",
+      "bytes": 32768128,
+      "sha256": "32b4719900d2c08498bb47ea0eb037a975a509cef349382793dc21561b45240b"
+    },
+    {
+      "path": "assets/accepted_weights.pt",
+      "bytes": 19008058,
+      "sha256": "346652368d8fdf3398202a6a28b4e30dbad7c4e625bc0e4a52318e1986f5f0fc"
+    },
+    {
+      "path": "config/final_settings.json",
+      "bytes": 1291,
+      "sha256": "ba1061ebdd0139b4fee80077d5397d39fb10f7a1eb60e9f4b082925f19f2bf86"
+    },
+    {
+      "path": "microct/__init__.py",
+      "bytes": 95,
+      "sha256": "a8ad89b0a9b38ab8a1c6d748d76f1406688262994004a798c535d089a356454d"
+    },
+    {
+      "path": "microct/__main__.py",
+      "bytes": 3239,
+      "sha256": "42db2a22c50b6125bf11a94c24746ba8c6878d36402e67af1ecf72f4c0fa473e"
+    },
+    {
+      "path": "microct/inference.py",
+      "bytes": 8725,
+      "sha256": "54f5e5fc94d6e0f49c311a71d52cf9fc01e03571078c3734df4c48dd396fe420"
+    },
+    {
+      "path": "microct/model.py",
+      "bytes": 3622,
+      "sha256": "78a0f0de18fd51ffaebf2acf93599452f07b717ae8cf9c7c94c17a1d7a9dcc52"
+    },
+    {
+      "path": "microct/noise.py",
+      "bytes": 12916,
+      "sha256": "3cba1ff8cc3047c391d21f5764b08c7e882bd35184f9b6068ae549b2967898cf"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5083,
+      "sha256": "6751157dd39512066956c0d068c14a4681b1fa56ec1fc435492f87a181da2462"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 191,
+      "sha256": "fba08f728671a26006be9cedab58e403194ae3aaa9e310a97c6b1ae1037a1e59"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 329,
+      "sha256": "8d58b94215e0e5c0bdfb3b6d82f3117982032f36711362d1eb9f6fca59cfe9dd"
+    },
+    {
+      "path": "tests/test_smoke.py",
+      "bytes": 1934,
+      "sha256": "54a6f60a7ab2903b764e878ebaf625c898ae5e307b6a6cbd3bc58623fddd130a"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 2494,
+      "sha256": "fa4f42027689a613eee69c05ab6342c86e99148fc001ae370de4b50a5bb35e0f"
+    }
+  ]
+}

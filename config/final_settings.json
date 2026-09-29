@@ -1,0 +1,56 @@
+{
+  "release_version": "1.0.0",
+  "checkpoint": "assets/accepted_weights.pt",
+  "sqrt_spectrum": "assets/accepted_sqrt_spectrum.npy",
+  "inference": {
+    "background": 45820.0,
+    "contrast": 2887.0,
+    "training_anchor": 0.30599761684099036,
+    "patch": 96,
+    "batch": 16,
+    "slab_depth": 256,
+    "margin": 32,
+    "probability_threshold": 0.520098865032196,
+    "nbc_threshold": 49111.34765625,
+    "nbc_sigma": 1.4,
+    "nbc_min_voxels": 8,
+    "pore_sigma": 0.8,
+    "pore_threshold": 38000.0,
+    "pore_min_voxels": 3,
+    "volume_depth": 1958,
+    "crop_y": 372,
+    "crop_x": 51,
+    "crop_height": 480,
+    "crop_width": 640
+  },
+  "residual_estimator": {
+    "fine_factor": 3,
+    "psf_voxels": 0.854,
+    "background": 45820.0,
+    "contrast": 2887.0,
+    "kernel_size": 64,
+    "polynomial_stride": 8,
+    "carbide_label": 3,
+    "matrix_label": 2,
+    "excluded_labels": [
+      1,
+      4
+    ],
+    "matrix_erosion": 3,
+    "exclusion_dilation": 4,
+    "max_lag": 8,
+    "minimum_pairs": 500
+  },
+  "residual_crop_origin_zyx": [
+    0,
+    0,
+    480
+  ],
+  "residual_crop_shape_zyx": [
+    160,
+    160,
+    160
+  ],
+  "source_slab_zero_based_z_start": 1600,
+  "source_slab_zero_based_z_stop_exclusive": 1760
+}
